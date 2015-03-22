@@ -1,0 +1,11 @@
+{
+    "applications": {
+        "_default": {
+            "link": "gradyelianotes"
+        }, 
+        "gradyelianotes": {
+            "applicationId": "xFiZUOZ1fbPqSImEWaMyCjKxm67OW6DdZGpa9voF", 
+            "masterKey": "KOJ7xNhy1jPkvyj5KrdlMtCjfnakkGSBapcRI6ew"
+        }
+    }
+}
