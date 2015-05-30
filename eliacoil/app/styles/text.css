@@ -1,0 +1,29 @@
+/*.post-body {*/
+  /*background: whitesmoke;*/
+/*}*/
+.bright-text {
+  color: ghostwhite;
+}
+
+.paragraph-xxxl {
+  font-size: 250%;
+}
+.paragraph-xxl {
+  font-size: 200%;
+}
+.paragraph-xl {
+  font-size: 150%;
+}
+.paragraph-lg {
+  font-size: 120%;
+}
+
+.paragraph-md {
+  font-size: 100%;
+}
+.paragraph-sm {
+  font-size: 75%;
+}
+.paragraph-xs {
+  font-size: 50%;
+}

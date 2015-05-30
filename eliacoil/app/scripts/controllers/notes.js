@@ -14,4 +14,5 @@ angular.module('eliacoilApp')
       'AngularJS',
       'Karma'
     ];
+    window.parallax(window,document);
   });

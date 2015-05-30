@@ -9,5 +9,5 @@
  */
 angular.module('eliacoilApp')
   .controller('FooterCtrl', ['$scope', function ($scope) {
-    $scope.message = 'Built by Elia Grady 2015';
+    $scope.message = 'This site was built by Elia Grady, 2015 - Parse.com hosted';
   }]);

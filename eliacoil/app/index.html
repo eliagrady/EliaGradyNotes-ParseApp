@@ -2,9 +2,10 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Elia Grady's Notes</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -13,17 +14,20 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/ripple.css">
+    <link rel="stylesheet" href="styles/text.css">
+    <link rel="stylesheet" href="styles/parallax.css">
     <!-- endbuild -->
     <base href="/">
   </head>
-  <body ng-app="eliacoilApp">
+  <body ng-app="eliacoilApp" class="site">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
+    <header class="header ">
+      <nav class="navbar navbar-default" role="navigation">
         <div class="container">
           <div class="navbar-header">
 
@@ -34,31 +38,33 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="/">Welcome to www.elia.co.il!</a>
+            <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home"></span></a>
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav">
-              <li class="active"><a ng-href="/">Home</a></li>
-              <li><a ng-href="notes">Notes</a></li>
+              <!--<li class="active"><a ng-href="/">Home</a></li>-->
               <li><a ng-href="about">About</a></li>
+              <li><a ng-href="notes">Notes</a></li>
               <li><a ng-href="contact">Contact</a></li>
             </ul>
           </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
 
-    <div class="container">
-    <div ng-view=""></div>
-    </div>
+    <main class="site-content container">
+      <div ng-view=""></div>
+    </main>
 
-    <div class="footer" ng-controller="FooterCtrl">
+    <footer class="footer" ng-controller="FooterCtrl">
       <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team {{ message }} </p>
+        <p class="bright-text paragraph-lg">
+          {{ message }}
+        </p>
       </div>
-    </div>
+    </footer>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -87,12 +93,21 @@
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/custom/ripple.js"></script>
+        <script src="scripts/custom/parallax.js"></script>
         <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/notfound.js"></script>
         <script src="scripts/controllers/footer.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/notes.js"></script>
         <script src="scripts/controllers/contact.js"></script>
         <!-- endbuild -->
+
+    <video autoplay loop poster="images\background.jpg" id="bgvid">
+      <!-- Video background, courtesy of Wix Media servers -->
+      <source src="http://storage.googleapis.com/video.wixstatic.com/video/11062b_e7d803ee67fa4998bfb51e719fbe5a90/1080p/webm/file.webm" type="video/webm">
+      <source src="http://storage.googleapis.com/video.wixstatic.com/video/11062b_e7d803ee67fa4998bfb51e719fbe5a90/1080p/mp4/file.mp4" type="video/mp4">
+    </video>
 </body>
 </html>

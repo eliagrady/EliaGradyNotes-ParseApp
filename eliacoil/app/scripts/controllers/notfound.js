@@ -2,21 +2,16 @@
 
 /**
  * @ngdoc function
- * @name eliacoilApp.controller:MainCtrl
+ * @name eliacoilApp.controller:AboutCtrl
  * @description
- * # MainCtrl
+ * # AboutCtrl
  * Controller of the eliacoilApp
  */
 angular.module('eliacoilApp')
-  .controller('MainCtrl', ['$scope', function ($scope) {
+  .controller('NotFoundCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
-      'Karma',
-      'temp'
+      'Karma'
     ];
-
-    $scope.locale = $scope.$parent.locale || "EN";
-
-
-  }]);
+  });
