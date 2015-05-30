@@ -1,0 +1,18 @@
+{
+  "global": {
+    "parseVersion": "1.4.2"
+  },
+  "applications": {
+    "_default": {
+      "link": "co.il.elia"
+    },
+    "co.il.elia": {
+      "applicationId": "qwOnMM4W39hic4Vey3EthIUWqQf81tGyxbKfGRw6",
+      "masterKey": "5kvvvVJY08sk9vb8vZx9sO8kMwAc0qafXqXzSpUp"
+    },
+    "com.eliagrady": {
+      "applicationId": "xFiZUOZ1fbPqSImEWaMyCjKxm67OW6DdZGpa9voF",
+      "masterKey": "KOJ7xNhy1jPkvyj5KrdlMtCjfnakkGSBapcRI6ew"
+    }
+  }
+}
